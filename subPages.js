@@ -8,9 +8,7 @@ backgroundText.style.height = backgroundImage.height + 'px'
 window.addEventListener("resize", function(event) {
     if(window.innerWidth > 875){
         backgroundText.style.height = backgroundImage.height + 'px'
-    } else{
-        background.style.display = 'none'
-    }
+    } 
 
 
 });
