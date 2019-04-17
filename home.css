@@ -6,6 +6,7 @@
 body {
   font-family: forma-djr-display, sans-serif;
   letter-spacing: 2px;
+  overflow-x: hidden;
 }
 
 .why__title, .answer__icon, .answer__text, .offer__block, .contact__title, .contact__map, .contact__form {
@@ -18,87 +19,6 @@ body {
   50% {
     transform: scale(1.1) rotate(10deg);
   }
-}
-
-.navigation__top {
-  display: flex;
-  height: 50px;
-  align-items: center;
-  justify-content: flex-end;
-}
-
-.top__links {
-  margin-right: 15px;
-}
-
-.fa {
-  margin-right: 15px;
-}
-
-.top__links a {
-  text-decoration: none;
-  color: black;
-  transition: all 0.5s;
-}
-
-.top__links a:hover {
-  color: #3787e2;
-}
-
-.top__number {
-  background: #3787e2;
-  padding: 10px;
-  color: white;
-  font-weight: bold;
-  transition: all 0.5s;
-}
-
-.top__number:hover {
-  background: #0e509b;
-}
-
-.navigation__bottom {
-  display: flex;
-  height: 80px;
-  align-items: center;
-}
-
-.bottom__logo {
-  width: 30%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: all 0.5s;
-  font-weight: bold;
-}
-
-.bottom__logo:hover {
-  color: #3787e2;
-}
-
-.bottom__logo img {
-  margin-right: 10px;
-}
-
-.bottom__links {
-  display: flex;
-  justify-content: space-around;
-  width: 60%;
-  font-weight: bold;
-}
-
-.bottom__links a {
-  text-decoration: none;
-  color: black;
-  transition: all 0.5s;
-}
-
-.bottom__links a:hover {
-  color: #3787e2;
-}
-
-a.active {
-  color: #3787e2;
 }
 
 .background {
@@ -326,73 +246,6 @@ a.active {
   width: 95%;
 }
 
-.footer {
-  background: #3d3d3d;
-  margin-top: 10px;
-}
-
-.footer__top {
-  display: flex;
-}
-
-.footer__logo {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  background: white;
-  padding: 10px;
-  margin-left: 50px;
-  width: 190px;
-  height: 100px;
-  font-weight: bold;
-}
-
-.footer__title {
-  display: flex;
-  align-items: center;
-  margin-left: 30px;
-  color: white;
-  padding-top: 20px;
-}
-
-.footer__bottom {
-  display: flex;
-  margin-top: 55px;
-  color: white;
-}
-
-.bottom__office {
-  border-right: 3px solid white;
-  width: 30%;
-  padding-left: 50px;
-}
-
-.office__header {
-  font-weight: bold;
-}
-
-.office__text {
-  margin-top: 25px;
-}
-
-.bottom__hours {
-  margin-left: 50px;
-}
-
-.hours__header {
-  font-weight: bold;
-}
-
-.hours__text {
-  margin-top: 25px;
-}
-
-.footer__signature {
-  color: white;
-  text-align: center;
-  margin-top: 100px;
-}
-
 /* Font sizes groups */
 .navigation__top {
   font-size: 25px;
@@ -522,9 +375,6 @@ a.active {
 }
 
 @media (max-width: 560px) {
-  .bottom__links {
-    visibility: hidden;
-  }
   .main {
     height: 60vw;
     background: #414141;

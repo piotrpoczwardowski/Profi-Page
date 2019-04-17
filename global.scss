@@ -15,6 +15,9 @@ $secondaryColor: rgb(14, 80, 155);
     height: 70px;
     background: $primaryColor;
 }
+.hamburgerMenu{
+  display: none;
+}
 
   .navigation__top {
     display: flex;
@@ -23,6 +26,7 @@ $secondaryColor: rgb(14, 80, 155);
     justify-content: flex-end;
     .top__links {
         margin-right: 15px;
+        font-size: 25px;
         a{
             text-decoration: none;
             color: black;
@@ -34,6 +38,7 @@ $secondaryColor: rgb(14, 80, 155);
       }
       .fa {
         margin-right: 15px;
+        font-size: 25px;
       }
 
       .top__number {
@@ -42,6 +47,8 @@ $secondaryColor: rgb(14, 80, 155);
         color: white;
         font-weight: bold;
         transition: all 0.5s;
+        text-align: center;
+        font-size: 25px;
         &:hover{
             background: $secondaryColor
 
@@ -50,7 +57,7 @@ $secondaryColor: rgb(14, 80, 155);
   }
   .navigation__bottom {
     display: flex;
-  box-shadow: 10px 10px 10px black;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.226);
     height: 80px;
     align-items: center;
 
@@ -60,6 +67,7 @@ $secondaryColor: rgb(14, 80, 155);
         justify-content: center;
         align-items: center;
         transition: all 0.5s;
+        font-size: 40px;
         font-weight: bold;
         img{
             margin-right: 10px;
@@ -74,6 +82,7 @@ $secondaryColor: rgb(14, 80, 155);
         display: flex;
         justify-content: space-around;
         width: 60%;
+        font-size: 22px;
         font-weight: bold;
         a{
             text-decoration: none;
@@ -151,6 +160,33 @@ $secondaryColor: rgb(14, 80, 155);
   }
 
   @media (max-width: 800px) {
+
+.navigation__top {
+   
+    .top__links {
+        font-size: 20px;
+       
+      }
+      .fa {
+        font-size: 20px;
+      }
+
+      .top__number {
+        font-size: 20px;
+       
+      }
+  }
+  .navigation__bottom{
+    .bottom__logo{
+      font-size: 30px;
+    }
+    .bottom__links{
+      font-size: 18px;
+    }
+  }
+
+
+
     .footer__title{
     
      
@@ -177,6 +213,33 @@ $secondaryColor: rgb(14, 80, 155);
 
   }
   @media (max-width: 600px) {
+
+
+    .navigation__bottom{
+      .bottom__links{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        width: 100%;
+        background: rgb(202, 35, 35);
+        text-align: center;
+        z-index: 100;
+       transition: height 1s;
+        overflow: hidden;
+        height: 0px;
+        a{
+          margin-top: 25px;
+          font-size: 25px;
+        }
+      }
+    }
+
+    .hamburgerMenu{
+      display: block;
+      margin-left: 55%;
+      font-size: 40px;
+      cursor: pointer;
+    }
     
     .footer__logo{
       margin-left: 0px;
