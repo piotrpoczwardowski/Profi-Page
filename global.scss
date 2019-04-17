@@ -11,6 +11,10 @@ $secondaryColor: rgb(14, 80, 155);
     font-family: forma-djr-display, sans-serif;
     
   }
+  .stripe{
+    height: 70px;
+    background: $primaryColor;
+}
 
   .navigation__top {
     display: flex;
@@ -83,4 +87,136 @@ $secondaryColor: rgb(14, 80, 155);
   }
         }
       }
+  }
+
+  .footer{
+    background: grey;
+    color: white;
+    
+  }
+  .footer__top{
+    display: flex;
+  }
+  .footer__logo{
+    color: black;
+    background: white;
+    margin-left: 50px;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    padding: 10px 20px;
+    font-size: 30px;
+    img{
+      padding-right: 20px;
+    }
+  }
+  .footer__title{
+    
+    font-size: 22px;
+    margin-left: 30px;
+    margin-top: 15px;
+    line-height: 35px;
+  }
+
+  .footer__bottom{
+    display: flex;
+    margin-top: 40px;
+  }
+  .bottom__office{
+    border-right: 3px solid white;
+    width: 20%;
+    
+    
+  }
+  .bottom__office, .bottom__hours{
+    padding-left: 50px;
+    p{
+      margin-top: 10px;
+      font-size: 18px;
+    }
+
+    
+  }
+
+  .office__header, .hours__header{
+    font-weight: bold;
+    font-size: 30px;
+    
+  }
+  .footer__signature{
+    text-align: center;
+    font-size: 18px;
+    margin-top: 90px;
+    padding-bottom: 20px;
+  }
+
+  @media (max-width: 800px) {
+    .footer__title{
+    
+     
+      line-height: 25px;
+      br{
+        display: none;
+      }
+    }
+
+  }
+
+  @media (max-width: 670px) {
+    .footer__title{
+    
+     
+     font-size: 20px;
+    }
+    .bottom__office{
+     
+      width: 40%;
+      
+      
+    }
+
+  }
+  @media (max-width: 600px) {
+    
+    .footer__logo{
+      margin-left: 0px;
+      font-size: 25px;
+      img{
+       height: 50px;;
+      }
+    }
+    .office__header, .hours__header{
+      font-weight: bold;
+      font-size: 23px;
+      
+    }
+  }
+  @media (max-width: 461px) {
+    
+   .footer__top{
+     display: block;
+     
+   }
+   .footer__logo{
+     display: flex;
+     justify-content: center;
+   }
+   .footer__title{
+     text-align: center;
+   }
+   .footer__bottom{
+     display: block;
+     text-align: center;
+   }
+   .bottom__office, .bottom__hours{
+     padding: 0;
+   }
+   .bottom__office{
+     border: none;
+    text-align: center;
+    width: 100%;
+   }
+   .bottom__hours{
+     margin-top: 40px;
+   }
   }

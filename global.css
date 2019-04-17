@@ -7,6 +7,11 @@ body {
   font-family: forma-djr-display, sans-serif;
 }
 
+.stripe {
+  height: 70px;
+  background: #3787e2;
+}
+
 .navigation__top {
   display: flex;
   height: 50px;
@@ -89,65 +94,124 @@ body {
   color: #3787e2;
 }
 
-
 .footer {
-  background: rgb(61, 61, 61);
-  margin-top: 10px;
+  background: grey;
+  color: white;
 }
 
 .footer__top {
   display: flex;
 }
+
 .footer__logo {
+  color: black;
+  background: white;
+  margin-left: 50px;
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  background: white;
-  padding: 10px;
-  margin-left: 50px;
-  width: 190px;
-  height: 100px;
-
   font-weight: bold;
+  padding: 10px 20px;
+  font-size: 30px;
+}
+
+.footer__logo img {
+  padding-right: 20px;
 }
 
 .footer__title {
-  display: flex;
-  align-items: center;
+  font-size: 22px;
   margin-left: 30px;
-  color: white;
-  padding-top: 20px;
+  margin-top: 15px;
+  line-height: 35px;
 }
 
 .footer__bottom {
   display: flex;
-  margin-top: 55px;
-  color: white;
+  margin-top: 40px;
 }
+
 .bottom__office {
-  border-right: 3px solid rgb(255, 255, 255);
-  width: 30%;
+  border-right: 3px solid white;
+  width: 20%;
+}
+
+.bottom__office, .bottom__hours {
   padding-left: 50px;
 }
-.office__header {
-  font-weight: bold;
-}
-.office__text {
-  margin-top: 25px;
-}
-.bottom__hours {
-  margin-left: 50px;
+
+.bottom__office p, .bottom__hours p {
+  margin-top: 10px;
+  font-size: 18px;
 }
 
-.hours__header {
+.office__header, .hours__header {
   font-weight: bold;
+  font-size: 30px;
 }
-.hours__text {
-  margin-top: 25px;
-}
+
 .footer__signature {
-  color: white;
   text-align: center;
+  font-size: 18px;
+  margin-top: 90px;
+  padding-bottom: 20px;
+}
 
-  margin-top: 100px;
+@media (max-width: 800px) {
+  .footer__title {
+    line-height: 25px;
+  }
+  .footer__title br {
+    display: none;
+  }
+}
+
+@media (max-width: 670px) {
+  .footer__title {
+    font-size: 20px;
+  }
+  .bottom__office {
+    width: 40%;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer__logo {
+    margin-left: 0px;
+    font-size: 25px;
+  }
+  .footer__logo img {
+    height: 50px;
+  }
+  .office__header, .hours__header {
+    font-weight: bold;
+    font-size: 23px;
+  }
+}
+
+@media (max-width: 461px) {
+  .footer__top {
+    display: block;
+  }
+  .footer__logo {
+    display: flex;
+    justify-content: center;
+  }
+  .footer__title {
+    text-align: center;
+  }
+  .footer__bottom {
+    display: block;
+    text-align: center;
+  }
+  .bottom__office, .bottom__hours {
+    padding: 0;
+  }
+  .bottom__office {
+    border: none;
+    text-align: center;
+    width: 100%;
+  }
+  .bottom__hours {
+    margin-top: 40px;
+  }
 }
