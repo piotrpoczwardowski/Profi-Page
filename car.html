@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="https://use.typekit.net/veb4qkk.css" />
 
-    <link rel="stylesheet" href="subPages.css" />
-    <link rel="stylesheet" href="global.css" />
+    <link rel="stylesheet" href="./css/subPages.css" />
+    <link rel="stylesheet" href="./css/global.css">
     
     <link
       rel="stylesheet"
@@ -19,7 +19,15 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <title>Document</title>
+    <title>Dodaj blasku swojemu otoczeniu - Profesjonalne czyszcznie dywanów, tapicerek, wykładzin i posadzek</title>
+    <meta
+      name="description"
+      content="Firma Profi - profesjonalne czyszczenie dywanów, posadzek, wykładzin, tapicerki samochodowej oraz meblowej. Dojazd na terenie całego Trójmiasta"
+    />
+    <meta property="og:title" content="Profesjonalne czyszcznie dywanów, tapicerek, wykładzin i posadzek">
+<meta property="og:description" content="Firma Profi - profesjonalne czyszczenie dywanów, posadzek, wykładzin, tapicerki samochodowej oraz meblowej. Dojazd na terenie całego Trójmiasta">
+<meta property="og:image" content="https://www.czyszczenie-dywanow.com.pl/wp-content/uploads/2017/03/PranieDywanowSlider.jpg">
+<meta property="og:url" content="https://gracious-murdock-65d78e.netlify.com/">
   </head>
   <body>
     <nav class="navigation">
@@ -64,7 +72,7 @@
       </div>
     </div>
     <div class="stripe">
-      <div class="triangle"></div>
+      <img src="./img/ikonki (3)/triangle.png" alt="wcięcie">
     </div>
     <div class="background__image">
       <img src="./img/car.png" alt="" />
@@ -154,18 +162,10 @@
         © 2019 by Daria Werner. Proudly created with Piotr Poczwardowski
       </div>
     </footer>
-    <script src="./global.js"></script>
+    <script src="./javascript/subPages.js"></script>
+    <script src="./javascript/global.js"></script>
     <script>
-      let backgroundImage = document.querySelector(".background__image img");
-      let backgroundText = document.querySelector(".background__blur");
-
-      window.onload = function() {
-        backgroundText.style.height = backgroundImage.height + "px";
-      };
-
-      window.addEventListener("resize", function(event) {
-        backgroundText.style.height = backgroundImage.height + "px";
-      });
+     
     </script>
   </body>
 </html>

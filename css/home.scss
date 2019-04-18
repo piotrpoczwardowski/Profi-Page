@@ -2,17 +2,22 @@
   margin: 0;
   padding: 0;
 }
-
 html {
   scroll-behavior: smooth;
 }
-
 body {
   font-family: forma-djr-display, sans-serif;
+
   overflow-x: hidden;
 }
 
-.why__title, .answer__icon, .answer__text, .offer__block, .contact__title, .contact__map, .contact__form {
+.why__title,
+.answer__icon,
+.answer__text,
+.offer__block,
+.contact__title,
+.contact__map,
+.contact__form {
   transform: translateY(50px);
   opacity: 0;
   transition: all 1s;
@@ -28,30 +33,25 @@ body {
   position: absolute;
   z-index: -1;
 }
-
 .background video {
   width: 100vw;
 }
-
 .main {
   height: 40vw;
   color: white;
   text-align: center;
   background: rgba(0, 0, 0, 0.582);
 }
-
 .main__title {
   font-weight: bold;
   padding-top: 10%;
 }
-
 .main__subtitle {
   margin-top: 25px;
 }
-
 .main__button {
   margin-top: 35px;
-  background: #7CB9E4;
+  background: #7cb9e4;
   border: none;
   color: white;
   padding: 10px 20px;
@@ -60,36 +60,30 @@ body {
   cursor: pointer;
   margin-bottom: 50px;
 }
-
 .main__button:hover {
-  background: #0e509b;
+  background: rgb(14, 80, 155);
   transition: all 0.5s;
 }
-
 .bar {
   background: white;
-  color: #7CB9E4;
+  color: #7cb9e4;
   text-align: center;
   transition: all 1s;
   padding: 50px 0;
 }
-
 .bar:hover {
-  color: #0e509b;
+  color: rgb(14, 80, 155);
 }
-
 .why {
   background: #414141;
   padding-bottom: 80px;
   font-weight: bold;
 }
-
 .why__title {
   color: white;
   text-align: center;
   padding: 40px 0;
 }
-
 .why__answers {
   display: flex;
   justify-content: space-around;
@@ -99,25 +93,22 @@ body {
   width: 25%;
   text-align: center;
 }
-
 .answer:not(:last-child) {
   border-right: 3px solid white;
 }
-
 .answer__icon img {
   width: 120px;
   height: 120px;
   margin-bottom: 10px;
 }
-
 .answer__icon img:hover {
   animation-name: pump;
   animation-duration: 2s;
   animation-iteration-count: infinite;
 }
-
 .answer__text {
   color: white;
+
   display: flex;
   justify-content: center;
   text-align: left;
@@ -128,7 +119,6 @@ body {
   flex-wrap: wrap;
   height: auto;
 }
-
 .offer a {
   text-decoration: none;
 }
@@ -136,10 +126,13 @@ body {
 .offer__block {
   width: 50%;
   height: 30vw;
+
   box-sizing: border-box;
   display: flex;
   align-items: flex-end;
+
   color: white;
+
   font-weight: bold;
   padding: 10px;
   background-position: center;
@@ -148,46 +141,38 @@ body {
 }
 
 .offer__block:nth-child(1) {
-  background-image: url(./img/vacuum.jpg);
+  background-image: url(../img/vacuum.jpg);
 }
-
 .offer__block:nth-child(2) {
-  background-image: url(./img/vacuum2.jpg);
+  background-image: url(../img/vacuum2.jpg);
 }
-
 .offer__block:nth-child(3) {
-  background-image: url(./img/room.png);
+  background-image: url(../img/room.png);
 }
-
 .offer__block:nth-child(4) {
-  background-image: url(./img/car.png);
+  background-image: url(../img/car.png);
 }
-
 .offer__block:nth-child(5) {
-  background-image: url(./img/floor.png);
+  background-image: url(../img/floor.png);
 }
-
 .offer__block:last-child {
   width: 100%;
   justify-content: center;
   align-items: center;
   height: 250px;
 }
-
 .offer__block:hover {
-  border: 8px solid white;
+  border: 8px solid rgb(255, 255, 255);
 }
 
 /* Font sizes groups */
 .navigation__top {
   font-size: 25px;
 }
-
 .main__title {
   font-size: 70px;
   letter-spacing: 3px;
 }
-
 .main__subtitle,
 .main__button,
 .why__answers {
@@ -227,12 +212,12 @@ body {
   .offer__block {
     font-size: 20px;
   }
+
   .bar,
   .why__title {
     font-size: 30px;
   }
 }
-
 @media (max-width: 640px) {
   .main__title {
     font-size: 30px;
@@ -244,6 +229,7 @@ body {
   .offer__block {
     font-size: 18px;
   }
+
   .bar,
   .why__title {
     font-size: 25px;
@@ -267,6 +253,7 @@ body {
     margin-top: 25px;
     width: 40%;
   }
+
   .answer__text {
     text-align: center;
   }
@@ -292,6 +279,7 @@ body {
   .main {
     height: 70vw;
   }
+
   .main__title {
     font-size: 25px;
     letter-spacing: 2px;
@@ -302,6 +290,7 @@ body {
   .offer__block {
     font-size: 16px;
   }
+
   .bar,
   .why__title {
     font-size: 22px;

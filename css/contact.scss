@@ -1,0 +1,144 @@
+$primaryColor: #7cb9e4;
+
+.bar {
+  font-size: 50px;
+  text-align: center;
+  color: $primaryColor;
+  margin-top: 50px;
+}
+
+.contact {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+
+  .map {
+    padding: 5px;
+    width: 50%;
+    iframe {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .form {
+    width: 50%;
+    margin-top: -18px;
+    padding: 5px;
+    form {
+      box-sizing: border-box;
+
+      input {
+        width: 48%;
+        height: 60px;
+        margin-top: 18px;
+        font-size: 20px;
+        border: 3px solid $primaryColor;
+        &.input__surname {
+          float: right;
+        }
+        &.input__email {
+          float: right;
+        }
+
+        &.input__message {
+          width: 99.4%;
+          height: 200px;
+        }
+
+        &::placeholder {
+          color: $primaryColor;
+          font-size: 20px;
+        }
+      }
+
+      .contact__button {
+        width: 100%;
+        margin-top: 18px;
+        border: none;
+        background: $primaryColor;
+        height: 60px;
+        color: white;
+        cursor: pointer;
+        font-weight: bold;
+        font-size: 40px;
+      }
+    }
+  }
+}
+
+@media (max-width: 970px) {
+  .contact {
+    display: block;
+
+    .map {
+      margin: 0 auto;
+      width: 90%;
+      iframe {
+        height: 400px;
+      }
+    }
+    .form {
+      margin: 0 auto;
+      width: 90%;
+    }
+  }
+}
+
+@media (max-width: 745px) {
+  .bar {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 640px) {
+  .bar {
+    font-size: 35px;
+  }
+}
+
+@media (max-width: 560px) {
+  .contact {
+    .form {
+      form {
+        input {
+          font-size: 20px;
+
+          &::placeholder {
+            font-size: 20px;
+          }
+        }
+        .contact__button {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .contact {
+    .form {
+      form {
+        input {
+          font-size: 20px;
+          width: 100%;
+          text-align: center;
+
+          &.input__surname {
+            float: none;
+          }
+          &.input__email {
+            float: none;
+          }
+
+          &::placeholder {
+            font-size: 20px;
+          }
+        }
+        .contact__button {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}

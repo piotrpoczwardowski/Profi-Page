@@ -1,7 +1,7 @@
 .bar {
   font-size: 50px;
   text-align: center;
-  color: #7CB9E4;
+  color: #7cb9e4;
   margin-top: 50px;
 }
 
@@ -36,7 +36,7 @@
   height: 60px;
   margin-top: 18px;
   font-size: 20px;
-  border: 3px solid #7CB9E4;
+  border: 3px solid #7cb9e4;
 }
 
 .contact .form form input.input__surname {
@@ -53,7 +53,7 @@
 }
 
 .contact .form form input::placeholder {
-  color: #7CB9E4;
+  color: #7cb9e4;
   font-size: 20px;
 }
 
@@ -61,7 +61,7 @@
   width: 100%;
   margin-top: 18px;
   border: none;
-  background: #7CB9E4;
+  background: #7cb9e4;
   height: 60px;
   color: white;
   cursor: pointer;

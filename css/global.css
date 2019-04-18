@@ -9,7 +9,13 @@ body {
 
 .stripe {
   height: 70px;
-  background: #7CB9E4;
+  background: #7cb9e4;
+}
+
+.stripe img {
+  width: 70px;
+  margin-top: -1px;
+  margin-left: 25px;
 }
 
 .hamburgerMenu {
@@ -24,7 +30,7 @@ body {
 }
 
 .navigation .navigation__bottom .bottom__links .offer__menu--mobile a.offer--active {
-  color: #7CB9E4;
+  color: #7cb9e4;
 }
 
 .navigation__top {
@@ -46,7 +52,7 @@ body {
 }
 
 .navigation__top .top__links a:hover {
-  color: #7CB9E4;
+  color: #7cb9e4;
 }
 
 .navigation__top .fa {
@@ -55,7 +61,7 @@ body {
 }
 
 .navigation__top .top__number {
-  background: #7CB9E4;
+  background: #7cb9e4;
   padding: 10px;
   color: white;
   font-weight: bold;
@@ -92,7 +98,7 @@ body {
 }
 
 .navigation__bottom .bottom__logo:hover {
-  color: #7CB9E4;
+  color: #7cb9e4;
 }
 
 .navigation__bottom .bottom__links {
@@ -110,11 +116,11 @@ body {
 }
 
 .navigation__bottom .bottom__links a.active {
-  color: #7CB9E4;
+  color: #7cb9e4;
 }
 
 .navigation__bottom .bottom__links a:hover {
-  color: #7CB9E4;
+  color: #7cb9e4;
 }
 
 .footer {
@@ -158,16 +164,19 @@ body {
   width: 20%;
 }
 
-.bottom__office, .bottom__hours {
+.bottom__office,
+.bottom__hours {
   padding-left: 50px;
 }
 
-.bottom__office p, .bottom__hours p {
+.bottom__office p,
+.bottom__hours p {
   margin-top: 10px;
   font-size: 18px;
 }
 
-.office__header, .hours__header {
+.office__header,
+.hours__header {
   font-weight: bold;
   font-size: 30px;
 }
@@ -203,11 +212,11 @@ body {
 }
 
 .offer__menu a.offer--active {
-  color: #7CB9E4;
+  color: #7cb9e4;
 }
 
 .offer__menu a:hover {
-  color: #7CB9E4;
+  color: #7cb9e4;
 }
 
 @media (max-width: 800px) {
@@ -286,7 +295,8 @@ body {
   .footer__logo img {
     height: 50px;
   }
-  .office__header, .hours__header {
+  .office__header,
+  .hours__header {
     font-weight: bold;
     font-size: 23px;
   }
@@ -332,7 +342,8 @@ body {
     display: block;
     text-align: center;
   }
-  .bottom__office, .bottom__hours {
+  .bottom__office,
+  .bottom__hours {
     padding: 0;
   }
   .bottom__office {
