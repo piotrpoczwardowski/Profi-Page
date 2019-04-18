@@ -1,4 +1,4 @@
-$primaryColor: rgb(55, 135, 226);
+$primaryColor: #7CB9E4;
 %paddingLeft{
   padding-left: 120px;
   @media (max-width: 1000px) {
@@ -126,6 +126,7 @@ $h1Size: 80px;
   ul{
     @extend %fontParagraph;
     padding-top: $paddingTopSection;
+    list-style: none;
   }
 }
 
@@ -165,7 +166,8 @@ $h1Size: 80px;
     
   }
   .background__text{
-    background: black;
+    background: #414141;
+  
    width: 100%;
    
    h1{

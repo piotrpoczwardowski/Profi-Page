@@ -38,13 +38,20 @@
           PROFI
         </div>
         <div class="bottom__links">
-          <a href="./index.html">GŁÓWNA</a>
-          <a  href="./carpets.html">OFERTA</a>
+          <a class="active" href="./index.html">HOME</a>
+          <a class='links__offer' href="./carpets.html">OFERTA</a><div class="offer__menu--mobile"></div>
           <a  href="./price.html">CENNIK</a>
           <a href="./contact.html">KONTAKT</a>
           
         </div>
        <span class="hamburgerMenu"><i class="fas fa-bars"></i></span> 
+      </div>
+      <div class="offer__menu">
+        <a href="./carpets.html">Pranie <br> dywanów</a>
+        <a href="./coverings.html">Pranie <br> wykładzin</a>
+        <a href="./furniture.html">Czyszczenie <br> tapicerki meblowej</a>
+        <a href="./car.html">Czyszczenie <br> tapicerki samochodowej</a>
+        <a href="./floor.html">Czyszczenie <br> posadzek</a>
       </div>
     </nav>
     <div class="background">
@@ -64,7 +71,7 @@
         Profesjonalne czyszczenie dywanów,<br />
         tapicerek, wykładzin i posadzek.
       </div>
-      <button class="main__button">ZOBACZ OFERTĘ</button>
+    <a href="#offer">  <button class="main__button">ZOBACZ OFERTĘ</button></a>
     </div>
     <div class="bar">Porozmawiajmy! +48 512-360-514</div>
     <div class="why">
@@ -111,7 +118,7 @@
       </div>
     </div>
     <div class="bar">Nasza oferta</div>
-    <div class="offer">
+    <div id="offer" class="offer">
       <a href="./carpets.html" class="offer__block">
         PRANIE <br />
         DYWANÓW
@@ -131,24 +138,7 @@
       <a href="./floor.html" class="offer__block">CZYSZCZENIE POSADZEK PODŁÓG</a>
     </div>
     <div class="bar">Nie zwlekaj! Umów się na wizytę!</div>
-    <!-- <div class="contact">
-      
-      <div class="contact__contener">
-        <div class="contact__map">
-          <div id="map">
-            <iframe width='100%' height="95%" src="https://www.google.com/maps/d/embed?mid=1EozKDkkiBXaf1yV2Pp-dtc_XLLgCpO_3"  frameborder="0"></iframe>
-          </div>
-        </div>
-        <form class="contact__form">
-          <input placeholder="Imię" type="text" class="input__name" />
-          <input placeholder="Nazwisko" type="text" class="input__surname" />
-          <input placeholder="Tytuł" type="text" class="input__title" />
-          <input placeholder="Email" type="text" class="input__email" />
-          <input placeholder="Wiadomość" type="text" class="input__message" />
-          <button class="contact__button">WYŚLIJ</button>
-        </form>
-      </div>
-    </div> -->
+  
     <footer class="footer">
       <div class="footer__top">
         <div class="footer__logo">
@@ -167,8 +157,8 @@
           <div class="office__text">
             <p> Kartuska 459a/10 <br />
               80-298 Gdańsk </p>
-           <p>   +48 512-360-514 <br />
-              biuro@profi-gdansk.com </p>
+           <p>   +48 572-837-002 <br />
+            eminic2519@gmail.com</p>
           </div>
         </div>
         <div class="bottom__hours">
@@ -186,6 +176,8 @@
     </footer>
     <script src="./global.js"></script>
     <script>
+      let body = document.querySelector('body')
+      let offerLinks = document.querySelectorAll('.offer a')
       var main=  document.querySelector('.main')
       var video = document.querySelector(".background video");
      var el = document.querySelectorAll('.bar, .why__title, .answer__icon, .answer__text, .offer__block,.contact__title, .contact__map, .contact__form')
@@ -212,7 +204,9 @@
       appearingOnScroll(x)
     })
   })
- 
+
+
+
     </script>
   
   </body>

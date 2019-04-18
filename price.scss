@@ -1,4 +1,4 @@
-$primaryColor: rgb(55, 135, 226);
+$primaryColor: #7CB9E4;
 %mainPadding{
     padding-left: 120px;
     @media (max-width: 850px) {
@@ -43,6 +43,9 @@ $primaryColor: rgb(55, 135, 226);
   background: $primaryColor;
   margin-top: 80px;
 }
+.stripe--white{
+    height: 80px;
+}
 .offer {
     @extend %mainPadding;
     margin-top: 80px;
@@ -54,6 +57,7 @@ $primaryColor: rgb(55, 135, 226);
     display: flex;
     margin-top: 80px;
     .block__img {
+        width: 200px;
       img {
         height: 150px;
       }
@@ -97,9 +101,11 @@ $primaryColor: rgb(55, 135, 226);
             display: block;
 
             .block__img{
-                text-align: center;
+              
+                margin: 0 auto;
                 img{
                     height: 120px;
+                    
                 }
                 
             }

@@ -58,8 +58,12 @@
 
 .stripe {
   height: 70px;
-  background: #3787e2;
+  background: #7CB9E4;
   margin-top: 80px;
+}
+
+.stripe--white {
+  height: 80px;
 }
 
 .offer {
@@ -73,6 +77,10 @@
 .offer .offer__block {
   display: flex;
   margin-top: 80px;
+}
+
+.offer .offer__block .block__img {
+  width: 200px;
 }
 
 .offer .offer__block .block__img img {
@@ -113,7 +121,7 @@
     display: block;
   }
   .offer .offer__block .block__img {
-    text-align: center;
+    margin: 0 auto;
   }
   .offer .offer__block .block__img img {
     height: 120px;

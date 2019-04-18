@@ -1,4 +1,4 @@
-$primaryColor: rgb(55, 135, 226);
+$primaryColor: #7CB9E4;
 $secondaryColor: rgb(14, 80, 155);
 
 
@@ -17,6 +17,27 @@ $secondaryColor: rgb(14, 80, 155);
 }
 .hamburgerMenu{
   display: none;
+}
+
+.navigation{
+  .navigation__bottom{
+    .bottom__links{
+      .offer__menu--mobile{
+        display: flex;
+        flex-direction: column;
+        margin-top: -40px;
+        display: none;
+      
+        a{
+          &.offer--active{
+            color: $primaryColor;
+          }
+        }
+       
+        
+      }
+    }
+  }
 }
 
   .navigation__top {
@@ -69,6 +90,8 @@ $secondaryColor: rgb(14, 80, 155);
         transition: all 0.5s;
         font-size: 40px;
         font-weight: bold;
+        position: relative;
+        z-index: 60;
         img{
             margin-right: 10px;
         }
@@ -99,7 +122,7 @@ $secondaryColor: rgb(14, 80, 155);
   }
 
   .footer{
-    background: grey;
+    background: #414141;
     color: white;
     
   }
@@ -159,6 +182,42 @@ $secondaryColor: rgb(14, 80, 155);
     padding-bottom: 20px;
   }
 
+  .offer__menu{
+    display: flex;
+    justify-content: space-around;
+    overflow: hidden;
+    height: 0px;
+    z-index: 50;
+    transition: all 1s;
+    position: absolute;
+    background: white;
+    width: 100%;
+    top: 100px;
+    
+    
+   
+   
+  }
+  .offer__menu a{
+    
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    font-size: 20px;
+    transition: all 1s;
+   margin-top: 30px;
+
+   &.offer--active{
+     color: $primaryColor;
+   }
+   
+    
+  }
+  .offer__menu a:hover{
+    color: $primaryColor;
+  }
+
   @media (max-width: 800px) {
 
 .navigation__top {
@@ -195,8 +254,19 @@ $secondaryColor: rgb(14, 80, 155);
         display: none;
       }
     }
+    .bottom__office{
+     
+      width: 40%;
+      
+      
+    }
 
   }
+  @media (max-width: 745px) {
+  .offer__menu a{
+      font-size: 16px;
+  }
+}
 
   @media (max-width: 670px) {
     .footer__title{
@@ -213,20 +283,25 @@ $secondaryColor: rgb(14, 80, 155);
 
   }
   @media (max-width: 600px) {
-
+    
 
     .navigation__bottom{
       .bottom__links{
         display: flex;
         flex-direction: column;
         position: absolute;
-        width: 100%;
-        background: rgb(202, 35, 35);
+        width: 0%;
+        background: rgb(255, 255, 255);
         text-align: center;
         z-index: 100;
-       transition: height 1s;
+       transition: width 0.3s;
         overflow: hidden;
-        height: 0px;
+        height: 85vh;
+        margin-top: -10px;
+        
+        &.activeMenu{
+          width: 100%;
+        }
         a{
           margin-top: 25px;
           font-size: 25px;
@@ -240,6 +315,7 @@ $secondaryColor: rgb(14, 80, 155);
       font-size: 40px;
       cursor: pointer;
     }
+   
     
     .footer__logo{
       margin-left: 0px;
@@ -255,6 +331,34 @@ $secondaryColor: rgb(14, 80, 155);
     }
   }
   @media (max-width: 461px) {
+
+    .navigation__top {
+      justify-content: space-around;
+      .top__links {
+          font-size: 16px;
+          margin: 0;
+         
+        }
+        .fa {
+          font-size: 16px;
+        }
+  
+        .top__number {
+          font-size: 16px;
+         padding: 5px 3px;
+        }
+    }
+    .navigation__bottom{
+      display: flex;
+      justify-content: space-around;
+      .bottom__logo{
+       font-size: 20px;
+      }
+      .hamburgerMenu{
+        font-size: 25px;
+        margin: 0;
+      }
+    }
     
    .footer__top{
      display: block;

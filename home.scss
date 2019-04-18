@@ -2,9 +2,12 @@
     margin: 0;
     padding: 0;
   }
+  html {
+    scroll-behavior: smooth;
+  }
   body {
     font-family: forma-djr-display, sans-serif;
-    letter-spacing: 2px;
+   
    overflow-x: hidden;
   }
   
@@ -13,6 +16,8 @@
   opacity: 0;
   transition: all 1s;
   }
+
+ 
   
   @keyframes pump{
     50%{
@@ -46,7 +51,7 @@
   }
   .main__button {
     margin-top: 35px;
-    background: rgb(55, 135, 226);
+    background: #7CB9E4;
     border: none;
     color: white;
     padding: 10px 20px;
@@ -61,7 +66,7 @@
   }
   .bar {
     background: white;
-    color: rgb(55, 135, 226);
+    color: #7CB9E4;
     text-align: center;
     transition: all 1s;
     padding: 50px 0;
@@ -70,7 +75,7 @@
     color: rgb(14, 80, 155);
   }
   .why {
-    background: rgb(56, 56, 56);
+    background: #414141;
     padding-bottom: 80px;
     font-weight: bold;
   }
@@ -115,7 +120,12 @@
     flex-wrap: wrap;
     height: auto;
   }
-  
+  .offer a{
+   
+    text-decoration: none;
+  }
+
+ 
   .offer__block {
     width: 50%;
     height: 30vw;
@@ -154,77 +164,13 @@
     align-items: center;
     height: 250px;
   }
+  .offer__block:hover{
+    border: 8px solid rgb(255, 255, 255);
+  }
+
   
-  .contact {
-    background: rgb(255, 255, 255);
-  }
-  .contact__title {
-  }
-  .contact__contener {
-    display: flex;
-  }
-  .contact__map {
-    width: 50%;
-    display: flex;
-    justify-content: center;
-  }
-  .contact__form {
-    width: 45%;
-    margin: 0 auto;
-    height: 450px;
-  }
-  .input__name,
-  .input__surname,
-  .input__title,
-  .input__email,
-  .input__message {
-    font-size: 25px;
-    
-    height: 50px;
-    box-sizing: border-box;
-    border: 4px solid rgb(55, 135, 226);
-  }
-  .contact__form input::placeholder {
-    padding: 10px;
-    font-size: 25px;
-    color: rgb(55, 135, 226);
-    font-weight: bold;
-  }
-  .input__name {
-    width: 49%;
-  }
-  .input__surname {
-    width: 50%;
-    float: right;
-  }
-  .input__email {
-    width: 50%;
-    float: right;
-    margin-top: 10px;
-  }
-  .input__title {
-    width: 49%;
-    margin-top: 10px;
-  }
-  .input__message {
-    width: 100%;
-    height: 250px;
-    margin-top: 10px;
-  }
-  .contact__button {
-    width: 100%;
-    height: 50px;
-    margin-top: 10px;
-    box-sizing: border-box;
   
-    color: white;
-    border: none;
-    background: rgb(55, 135, 226);
-  }
-  #map {
-    height: 450px;
-    width: 95%;
-  }
+  
   
   
   
@@ -238,26 +184,22 @@
   }
   .main__subtitle,
   .main__button,
-  .why__answers,
-  .office__text,
-  .hours__text,
-  .footer__title,
-  .footer__signature {
+  .why__answers{
     font-size: 25px;
   }
   
   .bar,
-  .bottom__logo,
   .why__title,
   .office__header,
-  .offer__block,
-  .hours__header,
-  .footer__logo,
-  .contact__button {
+  .offer__block,{
     font-size: 40px;
   }
   
-  /* ----------------- */
+  @media (max-width: 1200px) {
+    .main {
+      height: 50vw;
+    }
+  }
   
   @media (max-width: 1000px) {
     .main {
@@ -265,7 +207,7 @@
     }
   }
   
-  @media (max-width: 800px) {
+  @media (max-width: 860px) {
     .navigation__top {
       font-size: 20px;
     }
@@ -276,58 +218,19 @@
     .main__subtitle,
     .main__button,
     .why__answers,
-    .offer__block,
-    .office__text,
-    .hours__text,
-    .footer__title,
-    .footer__signature {
+    .offer__block, {
       font-size: 20px;
     }
   
     .bar,
-    .bottom__logo,
-    .why__title,
-    .office__header,
-    .hours__header,
-    .footer__logo,
-    .contact__button {
+    .why__title,{
       font-size: 30px;
     }
-    .contact__contener {
-      display: block;
-    }
-    .contact__map {
-      margin: 0 auto;
-      width: 90%;
-      height: 60vw;
-    }
-    .contact__form {
-      margin-top: 15px;
-      width: 90%;
-    }
-    #map {
-      height: 60vw;
-    }
-    .contact__form {
-      width: 90%;
-  
-      height: auto;
-      margin: 50px auto;
-    }
-    .input__name,
-    .input__surname,
-    .input__title,
-    .input__email,
-    .input__message {
-      height: 40px;
-      box-sizing: border-box;
-      border: 2px solid rgb(55, 135, 226);
-    }
+
+
   }
   @media (max-width: 640px) {
-    .navigation__top {
-      font-size: 18px;
-    }
+
     .main__title {
       font-size: 30px;
       letter-spacing: 3px;
@@ -335,21 +238,12 @@
     .main__subtitle,
     .main__button,
     .why__answers,
-    .offer__block,
-    .office__text,
-    .hours__text,
-    .footer__title,
-    .footer__signature {
+    .offer__block, {
       font-size: 18px;
     }
   
     .bar,
-    .bottom__logo,
-    .why__title,
-    .office__header,
-    .hours__header,
-    .footer__logo,
-    .contact__button {
+    .why__title, {
       font-size: 25px;
     }
     .contact__form input::placeholder {
@@ -361,7 +255,7 @@
     
     .main {
       height: 60vw;
-      background: rgb(65, 65, 65);
+      background: #414141;
     }
     .why__answers {
       display: flex;
@@ -372,9 +266,7 @@
       margin-top: 25px;
       width: 40%;
     }
-    .answer img {
-      
-    }
+
     .answer__text {
       text-align: center;
     }
@@ -395,57 +287,14 @@
       height: 30vw;
     }
   
-    .footer__logo {
-      height: 50px;
-    }
-    .footer__title {
-      font-size: 15px;
-    }
-    .footer__bottom {
-      display: block;
-    }
-    .bottom__office,
-    .bottom__hours {
-      border: none;
-      padding: 0;
-      margin: 0 auto;
-      text-align: center;
-    }
-    .bottom__office {
-      width: 90%;
-    }
-    .office__text,
-    .hours__text {
-      margin-top: 5px;
-    }
-    .hours__header {
-      margin-top: 20px;
-    }
-  
-    .contact__form {
-      width: 90%;
-  
-      height: auto;
-      margin: 50px auto;
-    }
-    .input__name,
-    .input__surname,
-    .input__title,
-    .input__message {
-      height: 40px;
-      box-sizing: border-box;
-      border: 2px solid rgb(55, 135, 226);
-    }
+
   }
   
   @media (max-width: 460px) {
     .main {
       height: 70vw;
     }
-  
-    .navigation__top {
-      font-size: 15px;
-    }
+
     .main__title {
       font-size: 25px;
       letter-spacing: 2px;
@@ -453,25 +302,14 @@
     .main__subtitle,
     .main__button,
     .why__answers,
-    .offer__block,
-    .office__text,
-    .hours__text,
-    .footer__title,
-    .footer__signature {
+    .offer__block{
       font-size: 16px;
     }
   
     .bar,
-    .bottom__logo,
-    .why__title,
-    .office__header,
-    .hours__header,
-    .footer__logo,
-    .contact__button {
+    .why__title{
       font-size: 22px;
     }
-    .contact__form input::placeholder {
-      font-size: 16px;
-    }
+  
   }
   
