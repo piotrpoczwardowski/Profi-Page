@@ -54,9 +54,11 @@ $primaryColor: #7cb9e4;
   }
   .offer__block {
     display: flex;
+   
     margin-top: 80px;
     .block__img {
       width: 200px;
+      text-align: center;
       img {
         height: 150px;
       }
