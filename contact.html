@@ -110,13 +110,13 @@
         ></iframe>
       </div>
       <div class="form">
-        <form action="">
-          <input placeholder="Imię" type="text" class="input__name" />
-          <input placeholder="Nazwisko" type="text" class="input__surname" />
-          <input placeholder="Tytuł" type="text" class="input__title" />
-          <input placeholder="Email" type="text" class="input__email" />
-          <input placeholder="Wiadomość" type="text" class="input__message" />
-          <button class="contact__button">WYŚLIJ</button>
+        <form name="contact" method="POST" data-netlify="true">
+          <input placeholder="Imię" name="name" type="text" class="input__name" />
+          <input placeholder="Nazwisko" name="surname" type="text" class="input__surname" />
+          <input placeholder="Tytuł" name="title" type="text" class="input__title" />
+          <input placeholder="Email" name="email" type="email" class="input__email" />
+          <input placeholder="Wiadomość" name="message" type="textarea" class="input__message" />
+          <button type="submit" class="contact__button">WYŚLIJ</button>
         </form>
       </div>
     </div>
