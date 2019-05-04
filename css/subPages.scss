@@ -159,10 +159,13 @@ $h1Size: 80px;
 @media (max-width: 875px) {
   .offer {
   }
+  .background__image img{
+    display: none;
+  }
   .background__text {
-    background: #414141;
+    
 
-    width: 100%;
+    
 
     h1 {
       width: 90%;

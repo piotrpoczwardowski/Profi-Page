@@ -168,9 +168,8 @@
 }
 
 @media (max-width: 875px) {
-  .background__text {
-    background: #414141;
-    width: 100%;
+  .background__image img {
+    display: none;
   }
   .background__text h1 {
     width: 90%;

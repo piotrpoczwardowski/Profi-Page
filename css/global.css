@@ -23,10 +23,14 @@ body {
 }
 
 .navigation .navigation__bottom .bottom__links .offer__menu--mobile {
-  display: flex;
   flex-direction: column;
-  margin-top: -40px;
   display: none;
+}
+
+.navigation .navigation__bottom .bottom__links .offer__menu--mobile a {
+  width: 150px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .navigation .navigation__bottom .bottom__links .offer__menu--mobile a.offer--active {
@@ -230,6 +234,7 @@ body {
   }
   .footer__title {
     text-align: center;
+    margin-left: 0px;
   }
 }
 
@@ -276,29 +281,34 @@ body {
 }
 
 @media (max-width: 600px) {
+  br {
+    display: none;
+  }
   .navigation__bottom .bottom__links {
     display: flex;
     flex-direction: column;
     position: absolute;
-    width: 0%;
+    width: 100%;
     background: white;
     text-align: center;
     z-index: 100;
     transition: width 0.3s;
     overflow: hidden;
-    height: 85vh;
+    height: 0vh;
     margin-top: -10px;
+    transition: height 0.5s;
   }
   .navigation__bottom .bottom__links.activeMenu {
-    width: 100%;
+    height: 500px;
   }
   .navigation__bottom .bottom__links a {
-    margin-top: 25px;
+    margin-top: 15px;
     font-size: 25px;
   }
   .hamburgerMenu {
     display: block;
     margin-left: 55%;
+    margin-top: -10px;
     font-size: 40px;
     cursor: pointer;
   }

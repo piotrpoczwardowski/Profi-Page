@@ -88,5 +88,8 @@ function toggleOfferMenuListener() {
     offerMenu.removeEventListener("mouseleave", removeHeight);
     
   }
+  if (window.innerWidth < 600) {
+    offerMenu.style.height = 0 + "px"; 
+  }
 }
 
