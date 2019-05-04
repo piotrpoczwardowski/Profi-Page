@@ -139,6 +139,7 @@ body {
   background-position: center;
   background-size: 100%;
   background-repeat: no-repeat;
+  transition: border 0.5s;
 }
 
 .offer__block:nth-child(1) {
