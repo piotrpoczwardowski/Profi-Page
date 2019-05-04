@@ -219,6 +219,20 @@ body {
   color: #7cb9e4;
 }
 
+@media (max-width: 950px) {
+  .footer__top {
+    display: block;
+  }
+  .footer__logo {
+    display: flex;
+    justify-content: center;
+    margin-left: 0px;
+  }
+  .footer__title {
+    text-align: center;
+  }
+}
+
 @media (max-width: 800px) {
   .navigation__top .top__links {
     font-size: 20px;

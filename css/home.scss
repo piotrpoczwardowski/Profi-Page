@@ -87,8 +87,8 @@ body {
   border-right: 3px solid white;
 }
 .answer__icon img {
-  width: 120px;
-  height: 120px;
+  width: auto;
+  height: 100px;
   margin-bottom: 10px;
 }
 .answer__icon img:hover {
@@ -204,6 +204,10 @@ body {
   .offer__block {
     font-size: 20px;
   }
+  .answer__icon img {
+   height: 80px;
+   width: auto;
+  }
 
   .bar,
   .why__title {
@@ -286,5 +290,10 @@ body {
   .bar,
   .why__title {
     font-size: 22px;
+  }
+}
+@media (max-width: 340px) {
+  .main{
+    height: 280px;
   }
 }

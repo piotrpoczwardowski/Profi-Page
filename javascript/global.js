@@ -5,7 +5,7 @@ let offerLink = document.querySelector(".links__offer");
 let offerMenu = document.querySelector(".offer__menu");
 let offerMenuRespons = document.querySelector(".offer__menu--mobile");
 let offerMenuLinks = document.querySelectorAll('.offer__menu a')
-let logos = document.querySelectorAll('.footer__logo, .bottom__logo')
+let logos = document.querySelectorAll('.footer__logo img, .bottom__logo')
 
 
 logos.forEach(function(e){

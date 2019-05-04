@@ -99,8 +99,8 @@ body {
 }
 
 .answer__icon img {
-  width: 120px;
-  height: 120px;
+  width: auto;
+  height: 100px;
   margin-bottom: 10px;
 }
 
@@ -222,6 +222,10 @@ body {
   .offer__block {
     font-size: 20px;
   }
+  .answer__icon img {
+    height: 80px;
+    width: auto;
+  }
   .bar,
   .why__title {
     font-size: 30px;
@@ -300,5 +304,11 @@ body {
   .bar,
   .why__title {
     font-size: 22px;
+  }
+}
+
+@media (max-width: 340px) {
+  .main {
+    height: 280px;
   }
 }
