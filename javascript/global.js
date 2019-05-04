@@ -69,7 +69,14 @@ function removeHeight() {
 }
 
 function toggleOfferMenuListener() {
-  if (window.innerWidth > 600) {
+    if (window.innerWidth < 1000) {
+        offerMenu.style.height = 80 + "px"; 
+        
+    }
+    else{
+        offerMenu.style.height = 0 + "px"; 
+    }
+  if (window.innerWidth > 1000) {
     offerLink.addEventListener("mouseenter", addHeight);
     offerMenu.addEventListener("mouseenter", addHeight);
     offerLink.addEventListener("mouseleave", removeHeight);
@@ -79,6 +86,7 @@ function toggleOfferMenuListener() {
     offerMenu.removeEventListener("mouseenter", addHeight);
     offerLink.removeEventListener("mouseleave", removeHeight);
     offerMenu.removeEventListener("mouseleave", removeHeight);
+    
   }
 }
 
