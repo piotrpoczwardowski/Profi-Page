@@ -11,17 +11,7 @@ body {
   overflow-x: hidden;
 }
 
-.why__title,
-.answer__icon,
-.answer__text,
-.offer__block,
-.contact__title,
-.contact__map,
-.contact__form {
-  transform: translateY(50px);
-  opacity: 0;
-  transition: all 1s;
-}
+
 
 @keyframes pump {
   50% {
@@ -62,13 +52,13 @@ body {
 }
 .main__button:hover {
   background: rgb(14, 80, 155);
-  transition: all 0.5s;
+  transition: background 0.5s;
 }
 .bar {
   background: white;
   color: #7cb9e4;
   text-align: center;
-  transition: all 1s;
+  transition: color 0.5s;
   padding: 50px 0;
 }
 .bar:hover {
