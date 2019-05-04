@@ -69,14 +69,14 @@ function removeHeight() {
 }
 
 function toggleOfferMenuListener() {
-    if (window.innerWidth < 1000) {
+    if (window.innerWidth < 1025) {
         offerMenu.style.height = 80 + "px"; 
         
     }
     else{
         offerMenu.style.height = 0 + "px"; 
     }
-  if (window.innerWidth > 1000) {
+  if (window.innerWidth > 1025) {
     offerLink.addEventListener("mouseenter", addHeight);
     offerMenu.addEventListener("mouseenter", addHeight);
     offerLink.addEventListener("mouseleave", removeHeight);
