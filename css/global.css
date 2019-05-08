@@ -5,6 +5,8 @@
 
 body {
   font-family: forma-djr-display, sans-serif;
+  max-width: 1300px;
+  margin: 0 auto;
 }
 
 .stripe {

@@ -25,12 +25,15 @@ body {
 }
 .background video {
   width: 100vw;
+  max-width: 1300px;
 }
 .main {
   height: 40vw;
   color: white;
   text-align: center;
   background: rgba(0, 0, 0, 0.582);
+  max-width: 1300px;
+  max-height: 600px;
 }
 .main__title {
   font-weight: bold;
