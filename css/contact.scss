@@ -6,6 +6,12 @@ $primaryColor: #7cb9e4;
   color: $primaryColor;
   margin-top: 50px;
 }
+.form__error{
+text-align: center;
+color: red;
+font-size: 30px;
+display: none;
+}
 
 .contact {
   display: flex;
