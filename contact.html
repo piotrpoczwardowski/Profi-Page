@@ -42,12 +42,15 @@
       property="og:url"
       content="https://gracious-murdock-65d78e.netlify.com/"
     />
-    <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
-<script type="text/javascript">
-   (function(){
-      emailjs.init("user_TOkgauuRu5ZQxOoDrImyS");
-   })();
-</script>
+    <script
+      type="text/javascript"
+      src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function() {
+        emailjs.init("user_TOkgauuRu5ZQxOoDrImyS");
+      })();
+    </script>
   </head>
   <body>
     <nav class="navigation">
@@ -118,11 +121,41 @@
       <div class="form">
         <div class="form__error">Uzupełnij wszystkie pola</div>
         <form name="contact">
-          <input placeholder="Imię" name="name" type="text" class="input__name" />
-          <input placeholder="Nazwisko" name="surname" type="text" class="input__surname" />
-          <input placeholder="Tytuł" name="title" type="text" class="input__title" />
-          <input placeholder="Email" name="email" type="email" class="input__email" />
-          <input placeholder="Wiadomość" name="message" type="textarea" class="input__message" />
+          <input
+            autocomplete="off"
+            placeholder="Imię"
+            name="name"
+            type="text"
+            class="input__name"
+          />
+          <input
+            autocomplete="off"
+            placeholder="Nazwisko"
+            name="surname"
+            type="text"
+            class="input__surname"
+          />
+          <input
+            autocomplete="off"
+            placeholder="Tytuł"
+            name="title"
+            type="text"
+            class="input__title"
+          />
+          <input
+            autocomplete="off"
+            placeholder="Email"
+            name="email"
+            type="email"
+            class="input__email"
+          />
+          <input
+            autocomplete="off"
+            placeholder="Wiadomość"
+            name="message"
+            type="textarea"
+            class="input__message"
+          />
           <button type="submit" class="contact__button">WYŚLIJ</button>
         </form>
       </div>
@@ -171,45 +204,40 @@
     </footer>
     <script src="./javascript/global.js"></script>
     <script>
-    let contact = document.querySelector('.contact')
-    let inputs = document.querySelectorAll('input')
-      let error = document.querySelector('.form__error')
-    contact.addEventListener('submit', function(e){
+      let contact = document.querySelector(".contact");
+      let inputs = document.querySelectorAll("input");
+      let error = document.querySelector(".form__error");
+      contact.addEventListener("submit", function(e) {
+        e.preventDefault();
+        let empty = [];
+        let values = [];
+        inputs.forEach(function(el) {
+          if (el.value === "") {
+            error.style.display = "block";
+          } else {
+            empty.push("O");
+          }
+          values.push(el.value);
+        });
 
-      e.preventDefault()
-      let empty = []
-      let values = []
-      inputs.forEach(function(el){
-        
-        if(el.value === ''){
-          error.style.display = 'block'
-         
-        } else {
-          empty.push('O')
+        if (empty.length === 5) {
+          var serviceID = "firmaprofi_com_pl_gmail_com";
+          var templateID = "template_B0YkugRj";
+          var templateParams = {
+            name: values[0],
+            surname: values[1],
+            title: values[2],
+            email: values[3],
+            message: values[4]
+          };
+          emailjs.send(serviceID, templateID, templateParams);
+          inputs.forEach(function(el) {
+            el.value = "";
+          });
+          error.style.display = "none";
+          window.alert("Wysłano");
         }
-        values.push(el.value)
-      })
-      
-    if(empty.length === 5){
-      var serviceID = "firmaprofi_com_pl_gmail_com";
-      var templateID = "template_B0YkugRj";
-      var templateParams = {
-        name: values[0],
-        surname: values[1],
-        title: values[2],
-        email: values[3],
-        message: values[4],
-        
-      };
-      emailjs.send(serviceID, templateID, templateParams);
-      inputs.forEach(function(el){
-        el.value = ''
-       
-      })
-      error.style.display = 'none'
-        window.alert('Wysłano')
-    }
-    })
+      });
     </script>
   </body>
 </html>
