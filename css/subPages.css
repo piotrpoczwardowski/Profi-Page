@@ -120,7 +120,7 @@
   width: 100%;
   position: absolute;
   z-index: -5;
-  max-width: 1300px;
+  max-width: 1600px;
 }
 
 .background__image .background__blur {
@@ -128,7 +128,7 @@
   position: absolute;
   width: 100%;
   z-index: -4;
-  max-width: 1300px;
+  max-width: 1600px;
 }
 
 .background__text {

@@ -5,7 +5,7 @@
 
 body {
   font-family: forma-djr-display, sans-serif;
-  max-width: 1300px;
+  max-width: 1600px;
   margin: 0 auto;
 }
 
@@ -82,7 +82,7 @@ body {
 
 .navigation__bottom {
   display: flex;
-  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.226);
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.226);
   height: 80px;
   align-items: center;
 }

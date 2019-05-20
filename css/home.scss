@@ -25,14 +25,14 @@ body {
 }
 .background video {
   width: 100vw;
-  max-width: 1300px;
+  max-width: 1600px;
 }
 .main {
   height: 40vw;
   color: white;
   text-align: center;
   background: rgba(0, 0, 0, 0.582);
-  max-width: 1300px;
+  max-width: 1600px;
   max-height: 600px;
 }
 .main__title {
@@ -119,7 +119,7 @@ body {
 .offer__block {
   width: 50%;
   height: 30vw;
-
+  max-height: 400px;
   box-sizing: border-box;
   display: flex;
   align-items: flex-end;
