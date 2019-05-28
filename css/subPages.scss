@@ -118,7 +118,7 @@ $h1Size: 80px;
     @extend %fontTitle;
   }
   p {
-    padding-top: $paddingTopSection;
+    
     @extend %fontParagraph;
     line-height: 45px;
   }
@@ -198,6 +198,27 @@ $h1Size: 80px;
       img {
         height: 100px;
       }
+    }
+  }
+}
+
+@media (max-width: 350px) {
+  .offer {
+  }
+  .background__image img{
+    display: none;
+  }
+  .background__text {
+    
+
+   
+
+    h1 {
+      width: 100%;
+    }
+    p {
+      width: 100%;
+     
     }
   }
 }
