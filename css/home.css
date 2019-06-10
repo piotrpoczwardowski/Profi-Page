@@ -155,15 +155,15 @@ body {
 }
 
 .offer__block:nth-child(3) {
-  background-image: url(../img/room.png);
+  background-image: url(../img/room.jpg);
 }
 
 .offer__block:nth-child(4) {
-  background-image: url(../img/car.png);
+  background-image: url(../img/car.jpg);
 }
 
 .offer__block:nth-child(5) {
-  background-image: url(../img/floor.png);
+  background-image: url(../img/floor.jpg);
 }
 
 .offer__block:last-child {
