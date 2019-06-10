@@ -204,6 +204,9 @@
     </footer>
     <script src="./javascript/global.js"></script>
     <script>
+        window.onload = function() {
+  console.log('d')
+};
       let contact = document.querySelector(".contact");
       let inputs = document.querySelectorAll("input");
       let error = document.querySelector(".form__error");
@@ -238,6 +241,7 @@
           window.alert("Wysłano");
         }
       });
+      
     </script>
   </body>
 </html>
